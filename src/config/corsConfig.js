@@ -2,9 +2,7 @@
 
 const allowedOrigins = [
   'http://localhost:2085',
-  'https://apexglobal-client.vercel.app',
-  'https://apexglobalcliient-production.up.railway.app',
-  'https://apexglobalunion.com'
+  'https://cooperativeclient-production.up.railway.app'
 ]
 
 module.exports = {
