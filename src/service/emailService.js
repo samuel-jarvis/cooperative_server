@@ -34,7 +34,7 @@ exports.sendEmail = async (email, subject, html, copy) => {
 
 // send email confirmation otp
 exports.sendWelcomeEmail = async (user) => {
-  const subject = 'Welcome to Apex Global Union'
+  const subject = 'Welcome to Cooperative Union Bank'
 
   try {
     const templateParams = {
@@ -51,7 +51,7 @@ exports.sendWelcomeEmail = async (user) => {
 }
 
 exports.sendOtpEmail = async (user, otp) => {
-  const subject = 'OTP for Apex Global Union'
+  const subject = 'OTP for Cooperative Union Bank'
 
   try {
     const templateParams = {
