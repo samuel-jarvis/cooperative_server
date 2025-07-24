@@ -18,7 +18,7 @@ app.use(helmet())
 app.use(morgan('dev'))
 
 app.get('/', (req, res) => {
-  res.send("Welcome to Apex Global You don't have access 🤖")
+  res.send("Welcome to Cooperative Union Bank You don't have access 🤖")
 })
 
 // logger to see what routes are being hit
