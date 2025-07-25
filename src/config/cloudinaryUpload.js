@@ -10,7 +10,7 @@ cloudinary.config({
 const options = {
   overwrite: true,
   invalidate: true,
-  folder: 'apexglobal'
+  folder: 'cooperative'
 }
 
 exports.image = (image) => {

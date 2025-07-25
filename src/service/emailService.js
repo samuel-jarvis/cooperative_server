@@ -16,7 +16,7 @@ exports.sendEmail = async (email, subject, html, copy) => {
     })
 
     const message = {
-      from: 'support@apexglobalunion.com',
+      from: 'support@cooperativeunionbank.com',
       to: email,
       subject,
       html
