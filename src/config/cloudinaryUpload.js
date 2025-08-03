@@ -10,7 +10,7 @@ cloudinary.config({
 const options = {
   overwrite: true,
   invalidate: true,
-  folder: 'cooperative'
+  folder: 'wellsguarantytrust'
 }
 
 exports.image = (image) => {

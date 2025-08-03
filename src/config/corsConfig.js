@@ -3,7 +3,7 @@
 const allowedOrigins = [
   'http://localhost:2085',
   'https://cooperativeclient-production.up.railway.app',
-  'https://cooperativeunionbank.com'
+  'https://wellsguarantytrust.com'
 ]
 
 module.exports = {
