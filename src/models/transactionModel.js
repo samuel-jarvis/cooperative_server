@@ -31,9 +31,7 @@ const transactionSchema = new mongoose.Schema({
     required: false
   },
   type: {
-    type: String,
-    enum: ['income', 'expense', 'transfer'],
-    required: true
+    type: String
   }
 }, { timestamps: true })
 
