@@ -319,6 +319,22 @@ exports.addTransaction = async (req, res) => {
       date: req.body.date
     })
 
+    if (req.body.transactionType === 'credit') {
+      if (req.body.accountType === 'savings') {
+        user.account.savings += req.body.amount
+      } else if (req.body.accountType === 'checking') {
+        user.account.checking += req.body.amount
+      }
+    } else if (req.body.transactionType === 'debit') {
+      if (req.body.accountType === 'savings') {
+        user.account.savings -= req.body.amount
+      } else if (req.body.accountType === 'checking') {
+        user.account.checking -= req.body.amount
+      }
+    }
+
+    await user.save()
+
     res.status(201).json({
       status: 'success',
       data: transaction,
